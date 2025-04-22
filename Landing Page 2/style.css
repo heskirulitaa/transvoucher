@@ -1,0 +1,486 @@
+.android-compact {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-width: 412px;
+  margin: auto;
+  z-index: 0;
+}
+
+.android-compact .overlap-group {
+  position: relative;
+  height: 917px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  max-width: 412px;
+  padding: 12px 16px;
+}
+
+.android-compact .hamburger-menu-icon {
+  position: relative;
+  width: 18px;
+  height: 14px;
+  object-fit: cover;
+}
+
+.android-compact .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 5px; /* jarak antara logo dan tulisan E-VOUCHER */
+  position: relative;
+  z-index: 10;
+}
+
+.android-compact .logo-container img {
+  max-width: 180px; /* ukuran logo */
+  height: auto;
+}
+
+.android-compact .language-selector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  margin-top: -10px;
+  left: -5px;
+}
+
+.android-compact .language-selector img {
+  width: 14px;
+  height: auto;
+}
+
+.android-compact .language-selector p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 10px;
+}
+
+.android-compact .overlap {
+  display: flex;
+  flex-direction: column; /* or 'row' if you want them side by side */
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 0;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 412px;
+  height: auto;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Gradient overlay */
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.28) 50%, rgba(255, 255, 255, 0.4) 79%);
+  pointer-events: none; /* So clicks go through */
+}
+
+.android-compact .box {
+  position: absolute;
+  width: 412px;
+  height: 140px;
+  margin-top: 130px;
+}
+
+.android-compact .box .rectangle {
+  position: absolute;
+  width: 412px;
+  height: 140px;
+  background-color: transparent;
+  margin-bottom: 70px;
+  border: 1px solid;
+  border-color: #a18d4c;
+}
+
+.android-compact .box .rectangle img {
+  width: 412px;
+  height: 100%;
+}
+
+.android-compact .categories {
+  display: flex;
+  position: relative;
+  height: auto;
+  justify-content: center; /* beri jarak antar item */
+  gap: 10px;
+  margin-top: 70px;
+  text-align: center;
+  padding: 10px;
+  z-index: 2;
+}
+
+.android-compact .categories img {
+  width: 120px; /* gambar akan proporsional dalam kolom */
+  height: 140px;
+  border-radius: 12px;
+}
+
+.android-compact .categories-card p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: #000000;
+  font-size: 13px;
+  margin: 8px 0;
+  margin-top: 20px;
+}
+
+.my-button {
+  display: inline-block;
+  padding: 5px 10px;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  border: 1.5px solid black;
+  color: black;
+  margin-top: 10px;
+  border-radius: 0px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.android-compact .text-wrapper-5 {
+  position: absolute;
+  width: 140px;
+  top: 10px;
+  left: 126px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  margin-top: 28px;
+  z-index: 2;
+}
+
+.android-compact .p {
+  position: absolute;
+  width: 293px;
+  top: 80px;
+  left: 60px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 9px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.android-compact .overlap-2 {
+  position: absolute;
+  width: 369px;
+  height: 500px;
+  top: 690px;
+  left: 43px;
+}
+
+.overlap-2 img {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  bottom: 0;
+  top: 30px;
+  left: 60%;
+  transform: translateX(-50%) translateY(-30px);
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.slider-wrapper {
+  width: 412px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.categories {
+  display: flex;
+  min-width: 100%;
+  width: max-content; 
+  margin-left: 120px;
+  margin-right: 20px;
+}
+
+.categories-card {
+  flex: 0 0 calc(100vw / 3); 
+  scroll-snap-align: start;
+  text-align: center;
+  box-sizing: border-box;
+  max-width: 150px;
+  padding: 10px;
+}
+
+.categories-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.indicator-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+}
+
+.indicator {
+  height: 4px;
+  width: 30px;
+  background-color: #ddd;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: #a88d1e;
+}
+
+.android-compact .text-wrapper-6 {
+  position: absolute;
+  top: 173px;
+  left: 9px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.android-compact .frame {
+  position: absolute;
+  width: 150px;
+  height: 32px;
+  top: 170px;
+  right: 246px;
+  background-color: #a88d1e;
+  border-radius: 999px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.android-compact .text-wrapper-10 {
+  position: absolute;
+  width: 170px;
+  top: 90px;
+  right: 225px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #5a3825;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.signup-container {
+  background: white;
+  justify-self: center;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2 {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+.form-control {
+  border-radius: 15px;
+  border-color: #684400a8;
+  height: fit-content;
+  padding: 0.5rem 0.8rem;
+}
+
+.btn-brown {
+  background-color: #5d3b1f;
+  color: white;
+  border-radius: 50px;
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.btn-brown:hover {
+  background-color: #442d16;
+}
+
+.form-check {
+  display: flex;
+  align-items: center; /* Vertically center */
+  gap: 8px; /* Space between checkbox and label */
+}
+
+.form-check-label {
+  margin-left: 4px;
+  font-size: 0.75rem;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  justify-self: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #000000;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+}
+
+.divider:not(:empty)::before {
+  margin-right: 0.5em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 0.5em;
+}
+
+.small-link {
+  font-size: 0.85rem;
+}
+
+.password-toggle {
+  position: relative;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.android-compact .div {
+  position: absolute;
+  width: 340px;
+  height: 264px;
+  top: 172px;
+  left: 36px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* soft shadow */
+  border-radius: 15px;
+  z-index: 3;
+}
+
+.android-compact .mb-3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #00000080;
+  font-size: 7px;
+}
+
+.android-compact .mt-3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #00000080;
+}
+
+.android-compact .divider {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #00000080;
+}
+
+.android-compact .sign_in_clk {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #00000099;
+  text-decoration: underline;
+}
+
+.android-compact .tnc {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #00000099;
+  text-decoration: underline;
+}
+
+input[type="checkbox"].form-check-input {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #936000 !important; /* Yellow border */
+  border-radius: 4px; /* Optional: round the corners */
+  accent-color: #ffd700; /* Makes the checkmark yellow */
+  margin-top: 2px; /* Align with label text */
+  cursor: pointer;
+}
+
+.bg-image-left {
+  position: absolute;
+  top: 220px;
+  left: -60px;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  z-index: -2; /* send to back */
+}
+.bg-image-right {
+  position: absolute;
+  top: 220px;
+  right: -50px;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  z-index: -2; /* send to back */
+}
